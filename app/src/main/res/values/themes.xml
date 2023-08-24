@@ -1,0 +1,977 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NewsApp" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="popup_window_animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/black_opaque</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Toast</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+
+    <!--     ************************* Text Styles   **************************************************                         -->
+    <style name="mh1_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m1_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh1_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m1_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh1_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m1_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh1_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m1_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--20 MH2-->
+    <style name="mh2_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m2_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh2_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m2_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh2_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m2_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh2_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m2_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+
+    <!--   18  MH3 -->
+    <style name="mh3_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m3_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh3_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m3_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh3_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m3_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh3_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m3_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--    16MH4-->
+    <style name="mh4_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m4_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh4_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m4_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh4_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m4_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh4_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m4_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--    14MH5-->
+    <style name="mh5_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m5_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh5_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m5_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh5_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m5_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh5_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m5_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--    12MH6-->
+
+    <style name="mh6_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m6_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh6_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m6_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh6_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m6_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh6_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m6_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--    10MH7-->
+
+    <style name="mh7_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m7_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh7_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m7_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh7_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m7_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mh7_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m7_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb1_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m1_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb1_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m1_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb1_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m1_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb1_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m1_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--20 mb2-->
+    <style name="mb2_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m2_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb2_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m2_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb2_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m2_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb2_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m2_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+
+    <!--   18  mb3 -->
+    <style name="mb3_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m3_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb3_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m3_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb3_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m3_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb3_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m3_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--    16mb4-->
+    <style name="mb4_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m4_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb4_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m4_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb4_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m4_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb4_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m4_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--    14mb5-->
+    <style name="mb5_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m5_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb5_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m5_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb5_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m5_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb5_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m5_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--    12mb6-->
+    <style name="mb6_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m6_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb6_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m6_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb6_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m6_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb6_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m6_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--    10mb6-->
+    <style name="mb7_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m7_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb7_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m7_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb7_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m7_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="mb7_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/m7_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th1_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t1_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th1_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t1_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th1_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t1_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th1_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t1_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--20 th2-->
+    <style name="th2_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t2_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th2_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t2_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th2_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t2_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th2_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t2_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+
+    <!--   18  th3 -->
+    <style name="th3_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t3_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th3_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t3_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th3_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t3_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th3_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t3_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--    16th4-->
+    <style name="th4_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t4_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th4_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t4_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th4_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t4_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th4_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t4_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--    14th5-->
+    <style name="th5_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t5_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th5_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t5_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th5_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t5_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th5_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t5_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--    12th6-->
+
+    <style name="th6_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t6_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th6_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t6_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th6_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t6_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th6_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t6_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--    10th7-->
+
+    <style name="th7_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t7_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th7_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t7_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th7_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t7_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="th7_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t7_dimen</item>
+        <item name="android:textColor">@color/text_header_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb1_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t1_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb1_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t1_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb1_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t1_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb1_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t1_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--20 tb2-->
+    <style name="tb2_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t2_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb2_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t2_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb2_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t2_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb2_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t2_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+
+    <!--   18  tb3 -->
+    <style name="tb3_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t3_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb3_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t3_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb3_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t3_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb3_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t3_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--    16tb4-->
+    <style name="tb4_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t4_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb4_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t4_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb4_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t4_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb4_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t4_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--    14tb5-->
+    <style name="tb5_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t5_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb5_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t5_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb5_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t5_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb5_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t5_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--    12tb6-->
+    <style name="tb6_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t6_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb6_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t6_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb6_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t6_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb6_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t6_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <!--    10tb6-->
+    <style name="tb7_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t7_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb7_semi_reg" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t7_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb7_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t7_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+    <style name="tb7_italic" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/t7_dimen</item>
+        <item name="android:textColor">@color/text_body_gray</item>
+        <item name="android:fontFamily">@font/poppins_italic</item>
+        <item name="android:paddingStart">@dimen/PS_dimen</item>
+        <item name="android:paddingEnd">@dimen/PE_dimen</item>
+    </style>
+
+
+    <!--********** For Bottom Navigation Bar***********************-->
+    <style name="BottomNavText" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="CircularImage">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ChipCustomStyle" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="chipCornerRadius">@dimen/_5sdp</item>
+    </style>
+</resources>

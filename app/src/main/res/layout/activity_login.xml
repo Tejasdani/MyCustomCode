@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".selectnews.SelectTopicsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        style="@style/mh1_bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        style="@style/mh3_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="kminchelle"
+        android:autofillHints="name"
+        android:hint="@string/enter_username"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        style="@style/mh3_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autofillHints="name"
+        android:text="0lelplR"
+        android:hint="@string/enter_password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/login"
+        app:cornerRadius="10dp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

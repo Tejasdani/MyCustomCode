@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">AndroidStartup</string>
+
+    <string name="version">Version %1s</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="retry">Retry</string>
+    <string name="later">Later</string>
+    <string name="success">Success</string>
+    <string name="error">Error</string>
+    <string name="sign">Sign</string>
+    <string name="failed">Failed</string>
+    <string name="alert">Alert</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="done">Done</string>
+    <string name="ok">OK</string>
+
+    <!--Utils-->
+    <string name="network_disconnected">Network Disconnected</string>
+    <string name="please_check_the_network_and_retry">Please check the network and Retry</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_gender">Enter Gender</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="no_customers_available">No Customers Available...</string>
+    <string name="please_enter_all_fields_to_save">Please enter all fields to save</string>
+    <string name="str_continue">Continue</string>
+
+    <!--Select Topics-->
+    <string name="choose_topics_heading">Choose a topic to \n start reading</string>
+    <string name="world">World</string>
+    <string name="animal">Animal</string>
+    <string name="education">Educations</string>
+    <string name="sport">Sports</string>
+    <string name="games">Games</string>
+    <string name="plant">Plant</string>
+    <string name="vacation">Vacation</string>
+    <string name="fashion">Fashion</string>
+    <string name="food">Food</string>
+    <string name="film">Film</string>
+    <string name="tech">Tech</string>
+    <string name="music">Music</string>
+
+    <string name="action_sign_in">Login in</string>
+    <string name="user_name">User Name</string>
+    <string name="no_events_available">No Events Available...</string>
+
+    <string name="home">Home</string>
+    <string name="saved">Saved</string>
+    <string name="settings">Settings</string>
+    <string name="error_enter_valid_name">Enter valid name</string>
+    <string name="welcome_title">Welcome Back!</string>
+
+    <!--Nav-->
+    <string name="nav_title_home">Home</string>
+    <string name="nav_title_saved">Saved</string>
+    <string name="nav_title_settings">Settings</string>
+
+    <!--Save News Details-->
+    <string name="saved_msg">Already Saved to our database</string>
+    <string name="save_successfully">Data Saved Successfully</string>
+    <string name="delete_msg">News deleted successfully</string>
+    <string name="search_hint">Search for articles...</string>
+    <string name="copy_successfully">Copied...</string>
+
+</resources>

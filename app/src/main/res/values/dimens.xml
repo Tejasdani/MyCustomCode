@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="m1_dimen">22sp</dimen>
+    <dimen name="m2_dimen">20sp</dimen>
+    <dimen name="m3_dimen">18sp</dimen>
+    <dimen name="m4_dimen">16sp</dimen>
+    <dimen name="m5_dimen">14sp</dimen>
+    <dimen name="m6_dimen">12sp</dimen>
+    <dimen name="m7_dimen">10sp</dimen>
+
+    <dimen name="t1_dimen">24sp</dimen>
+    <dimen name="t2_dimen">22sp</dimen>
+    <dimen name="t3_dimen">20sp</dimen>
+    <dimen name="t4_dimen">18sp</dimen>
+    <dimen name="t5_dimen">16sp</dimen>
+    <dimen name="t6_dimen">14sp</dimen>
+    <dimen name="t7_dimen">12sp</dimen>
+
+
+
+    <dimen name="PS_dimen">5dp</dimen>
+    <dimen name="PE_dimen">5dp</dimen>
+    <dimen name="PT_dimen">5dp</dimen>
+    <dimen name="PB_dimen">5dp</dimen>
+
+
+    <dimen name="MS_dimen">5dp</dimen>
+    <dimen name="ME_dimen">5dp</dimen>
+    <dimen name="MT_dimen">5dp</dimen>
+    <dimen name="MB_dimen">5dp</dimen>
+
+    <dimen name="padding_grid_view">@dimen/_10sdp</dimen>
+</resources>
